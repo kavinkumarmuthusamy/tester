@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <p>First Name:</p>
+        <input type="text" id="fname" required>
+        <p>Last Name:</p>
+        <input type="text" id="lname" required>
+        <p>Phone Number:</p>
+        <input type="number" id="phone" required >
+        <p>Email ID:</p>
+        <input type="email" id="email"  required>
+        <p>Contury</p>
+        <select name="contury" id="con" required>
+               <option value="india">India</option>
+               <option value="north">North America</option>
+               <option value="south">South America</option>
+               <option value="ascia">Ascia</option>
+        </select>
+        <p>Role</p>
+        <select name="Role" id="rol" required>
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
+            <option value="Facultyt">Faculty</option>
+     </select>
+     <p>Date of Birth</p>
+     <input type="date" id="date" required>
+        <p>New Password:</p>
+        <input type="password" id="new" required>
+        <p>Confirm Password:</p>
+        <input type="password" id="last" required>
+
+        <br>
+        <button id="but" type="submit">check</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
